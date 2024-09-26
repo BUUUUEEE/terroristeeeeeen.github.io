@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('bosster_nirvana1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(21, 80, 157, 0.755);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+h1, h2 {
+    text-align: center;
+    animation: slideIn 1s;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bio {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.kurt-photo {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.songs {
+    flex: 1;
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.albums {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.albums img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.albums img:hover {
+    transform: scale(1.05);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
